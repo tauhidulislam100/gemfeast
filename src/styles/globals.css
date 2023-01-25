@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-gradient {
+    background: linear-gradient(270.04deg, #6C57DB 0.05%, rgba(12, 25, 31, 0.79) 97.84%), #00B8D9;
+}
