@@ -44,9 +44,6 @@ const Team = () => {
                     onBeforeInit={(swiper) => {
                     swiperRef.current = swiper;
                     }}
-                    pagination={{
-                    clickable: true,
-                    }}
                     modules={[Pagination]}
                     className="w-[80%] lg:w-[65%] h-full ml-0"
                 >

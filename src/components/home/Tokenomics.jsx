@@ -3,7 +3,7 @@ import React from 'react';
 
 const Tokenomics = () => {
     return (
-        <section className="mx-[10%] mt-[114px] text-center">
+        <section id='tokenomics' className="mx-[10%] pt-[114px] text-center">
           <h5 className='text-3xl xs:text-4xl sm:text-5xl lg:text-[54px] text-secondary font-black'>
             <span className='text-primary ml-3'>Token</span>omics
           </h5>

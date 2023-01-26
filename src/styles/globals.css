@@ -3,6 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behaviour: smooth;
+}
+
 .bg-custom-gradient {
     background: linear-gradient(270.04deg, #6C57DB 0.05%, rgba(12, 25, 31, 0.79) 97.84%), #00B8D9;
+}
+
+.swiper {
+    padding-bottom: 50px !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0 !important;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    width: 18px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #6C57DB;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none !important
 }

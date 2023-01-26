@@ -13,16 +13,16 @@ const Header = () => {
             <nav className='overflow-x-auto'>
               <ul className='flex items-center gap-3 md:gap-7 xl:gap-16'>
                 <li className='px-2 hover:text-primary'>
-                  <Link href={'#airdrop'}>Airdrop</Link>
+                  <Link scroll={false} href={'#airdrop'}>Airdrop</Link>
                 </li>
                 <li className='px-2 hover:text-primary'>
-                  <Link href={'#tokenomics'}>Tokenomics</Link>
+                  <Link scroll={false} href={'#tokenomics'}>Tokenomics</Link>
                 </li>
                 <li className='px-2 hover:text-primary'>
-                  <Link href={'#community'}>Community</Link>
+                  <Link scroll={false} href={'#community'}>Community</Link>
                 </li>
                 <li className='px-2 hover:text-primary'>
-                  <Link href={'/#team'}>Team</Link>
+                  <Link scroll={false} href={'/#team'}>Team</Link>
                 </li>
               </ul>
             </nav>

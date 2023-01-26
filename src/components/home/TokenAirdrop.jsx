@@ -3,7 +3,7 @@ import React from 'react';
 
 const TokenAirdrop = () => {
     return (
-        <section className='mx-[8%] mt-[134px] text-center'>
+        <section id='airdrop' className='mx-[8%] pt-[134px] text-center'>
           <h4 className='text-3xl xs:text-4xl sm:text-5xl lg:text-[54px] text-secondary lg:leading-[80px] font-black'>
             Our Massive 
             <span className='text-primary'> FEAST Token Airdrop</span>

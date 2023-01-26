@@ -2,7 +2,7 @@ import React from 'react';
 
 const EmailSubscribe = () => {
     return (
-        <section className='mt-[83px] bg-custom-gradient pb-[170px] mb-[200px]'>
+        <section id='community' className='mt-[83px] bg-custom-gradient pb-[170px] mb-[200px]'>
           <h5 className='text-3xl sm:text-4xl md:text-5xl text-white font-black pt-8 text-center'>Gemfeast Community</h5>
           <div className="absolute z-10 w-full">
             <div className="relative mx-[8%] lg:mx-[10%] bg-white md:flex items-center gap-3 shadow-xl justify-between rounded-[32px] px-7 xs:px-9 lg:px-12 py-8 xs:py-10 lg:py-16 mt-12 ">
