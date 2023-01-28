@@ -32,11 +32,11 @@ const Team = () => {
     ];
 
     return (
-        <section id='team' className="mx-[8%] md:mt-[134px]">
-            <h6 className='text-3xl xs:text-4xl md:text-5xl lg:text-[54px] text-center text-secondary lg:leading-[80px] font-black'>
+        <section id='team' className="mx-[6%] lg:mx-[8%] mt-14 sm:mt-20 lg:mt-[164px]">
+            <h6 className='text-3xl xs:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary lg:leading-[80px] font-black'>
                 <span className='text-primary ml-3'>Meet</span> the Team
             </h6>
-            <div className="mt-[50px] xs:mt-[91px] flex gap-[90px] items-center justify-center">
+            <div className="mt-10 sm:mt-[50px] lg:mt-[92px]">
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
@@ -45,14 +45,14 @@ const Team = () => {
                     swiperRef.current = swiper;
                     }}
                     modules={[Pagination]}
-                    className="w-[80%] lg:w-[65%] h-full ml-0"
+                    className="w-[80%] lg:w-[65%] h-full"
                 >
                     {
                         teams.map((team, idx) => (
                             <SwiperSlide key={idx} className='flex justify-center items-center select-none'>
                                 <div className="w-full">
                                     <div className="relative w-[150px] xl:w-[189px] h-[156px] xl:h-[183px] mx-auto rounded-full">
-                                        <Image className='rounded-full overflow-hidden object-cover' fill  src={team.imgUrl} alt='Team' />
+                                        <Image className='rounded-full overflow-hidden object-contain' fill  src={team.imgUrl} alt='Team' />
                                     </div>
                                     <div className="mt-8 xs:mt-11 xl:mt-[55px] text-center">
                                     <h6 className='text-[30px] text-secondary font-semibold'>{team.name}</h6>
@@ -62,20 +62,9 @@ const Team = () => {
                             </SwiperSlide>
                         ))
                     }
-                    {/* <SwiperSlide className='flex justify-center items-center'>
-                        <div className="w-full">
-                            <div className="relative w-[150px] xl:w-[189px] h-[156px] xl:h-[183px] rounded-full">
-                                <Image className='rounded-full overflow-hidden object-cover' fill  src="/img/team_1.png" alt='Team' />
-                            </div>
-                            <div className="mt-8 xs:mt-11 xl:mt-[55px] text-center">
-                            <h6 className='text-[30px] text-secondary font-semibold'>Bob</h6>
-                            <p className='text-xl text-secondary mt-3 xs:mt-6'>Founder</p>
-                            </div>
-                        </div>
-                    </SwiperSlide> */}
                 </Swiper>
             </div>
-            <div className="flex gap-5 justify-center items-center mt-[30px] xs:mt-[50px] md:mt-[70px]">
+            <div className="flex gap-5 justify-center items-center sm:mt-[30px] xs:mt-[50px] lg:mt-[70px]">
                 <div onClick={() => swiperRef.current?.slidePrev()} className="w-[50px] xs:w-[70px] lg:w-[90px] h-[50px] xs:h-[70px] lg:h-[90px] rounded-full bg-[#E6E6E6] flex items-center justify-center hover:bg-primary cursor-pointer hover:text-white">
                     <BsArrowLeft className='text-xl sm:text-2xl md:text-3xl lg:text-4xl' />
                 </div>

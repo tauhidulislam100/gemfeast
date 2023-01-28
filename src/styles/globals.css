@@ -9,6 +9,11 @@ html {
 
 .bg-custom-gradient {
     background: linear-gradient(270.04deg, #6C57DB 0.05%, rgba(12, 25, 31, 0.79) 97.84%), #00B8D9;
+    transition: all 0.5s linear;
+}
+
+button.bg-custom-gradient:hover {
+    background: linear-gradient(80.04deg, #6C57DB, rgba(12, 25, 31, 0.79) 97.84%), #6C57DB 0.05%;
 }
 
 .swiper {

@@ -8,7 +8,7 @@ import { Hero, WhySui, CoreFeatures,
 
 export default function Home() {
   return (
-    <div className='bg-[url("/img/gem_feast_bg.png")] bg-no-repeat bg-cover'>
+    <div className='md:bg-[url("/img/gem_feast_bg.png")] bg-no-repeat bg-cover'>
       <Header />
       <Hero />
       <WhySui />

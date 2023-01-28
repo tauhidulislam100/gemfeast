@@ -8,29 +8,29 @@ const Footer = () => {
           <div className="border-y border-gray-300 pt-14 pb-[62px] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
               <Link href={"/"} className="relative">
-                <Image width={169} height={47} className="mx-auto md:mx-0" src="/img/gemfeast_logo.png" />
+                <Image width={169} height={47} className="mx-auto md:mx-0" src="/img/gemfeast_logo.png" alt='Logo' />
               </Link>
               <p className="mt-[22px] text-sm ">Some footer text about the  Agency. Just a little description to help people understand you better</p>
               <div className="mt-[31px]">
                 <ul className='flex items-center justify-center gap-4'>
                   <li>
                     <Link href={"/"}>
-                      <Image width={36} height={36} src="/img/telegram.svg" />
+                      <Image width={36} height={36} src="/img/telegram.svg" alt='Telegram' />
                     </Link>
                   </li>
                   <li>
                     <Link href={"/"}>
-                      <Image width={36} height={36} src="/img/twitter.svg" />
+                      <Image width={36} height={36} src="/img/twitter.svg" alt='Twitter' />
                     </Link>
                   </li>
                   <li>
                     <Link href={"/"}>
-                      <Image width={36} height={36} src="/img/discord.svg" />
+                      <Image width={36} height={36} src="/img/discord.svg" alt='Discord' />
                     </Link>
                   </li>
                   <li>
                     <Link href={"/"}>
-                      <Image width={36} height={36} src="/img/medium.svg" />
+                      <Image width={36} height={36} src="/img/medium.svg" alt='Medium' />
                     </Link>
                   </li>
                 </ul>
