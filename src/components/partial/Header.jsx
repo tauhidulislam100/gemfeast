@@ -1,22 +1,45 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image'
-import Link from 'next/link'
-import Drawer from 'react-modern-drawer'
+import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { useMediaQuery } from 'react-responsive';
+const Drawer = dynamic(() => import('react-modern-drawer'), { ssr: false });
+
 const Header = () => {
 
-  const [open, setOpen] = React.useState(false);
-  const onChange = (bool) => {
-    // console.log('change: ', bool);
-  };
-  const onTouchEnd = () => {
-    setOpen(false);
-  };
-  const onSwitch = () => {
-    setOpen(c => !c);
-  };
+    
+    const [headerFixed, setHeader] = useState(false);
+    const [open, setOpen] = React.useState(false);
+    const headerRef = useRef(null);
+    const onChange = (bool) => {
+      // console.log('change: ', bool);
+    };
+    const isTablet = useMediaQuery({ minWidth: '768px' });
+    const onTouchEnd = () => {
+      setOpen(false);
+    };
+    const onSwitch = () => {
+      setOpen(c => !c);
+    };
 
+    useEffect(()=> {
+
+      if(headerRef.current){
+        const headerPos = headerRef.current?.getBoundingClientRect().top;
+        window.addEventListener('scroll', () => {
+          var currentPos = window.pageYOffset;
+          if(currentPos > headerPos){
+              setHeader(true);
+          }else{
+              setHeader(false);
+          }
+        });
+      }
+      
+    },[isTablet]);
+    
     return (
-        <header className='mx-[4%] lg:mx-[8%] pt-5 md:pt-8 lg:pt-14'>
+        <header ref={headerRef} id='header' className={`z-[9999]  px-[4%] lg:px-[8%] py-4 transition-all duration-500 ease-in-out ${headerFixed ? 'w-full fixed top-0 md:py-5 bg-white/90 shadow-lg' : 'md:relative md:shadow-none md:pt-8 lg:pt-14 md:bg-transparent'}`}>
           <div className='flex justify-between items-center md:ml-[30px] gap-10'>
             <Link href={'/'} className='relative min-w-[71px]'>
               <div className='w-8 h-8 sm:hidden'>
@@ -51,10 +74,27 @@ const Header = () => {
             open={open}
             onClose={onTouchEnd}
             direction="left"
+            className='p-5'
           >
-            <div className="p-5">
-              <Image width={169} height={47} src="/logo_with_title.svg" alt='Logo' className='' />
+            <div className="">
+              <Link href={'/'} onClick={() => setOpen(prev => !prev)}>
+                <Image width={169} height={47} src="/logo_with_title.svg" alt='Logo' className='' />
+              </Link>
             </div>
+            <ul onClick={() => setOpen(prev => !prev)} className='mt-10 text-lg space-y-2'>
+              <li className='px-2 hover:text-primary'>
+                <Link scroll={false} href={'#airdrop'}>Airdrop</Link>
+              </li>
+              <li className='px-2 hover:text-primary'>
+                <Link scroll={false} href={'#tokenomics'}>Tokenomics</Link>
+              </li>
+              <li className='px-2 hover:text-primary'>
+                <Link scroll={false} href={'#community'}>Community</Link>
+              </li>
+              <li className='px-2 hover:text-primary'>
+                <Link scroll={false} href={'/#team'}>Team</Link>
+              </li>
+            </ul>
           </Drawer>
         </header>
     )

@@ -33,10 +33,10 @@ const Team = () => {
 
     return (
         <section id='team' className="mx-[6%] lg:mx-[8%] mt-14 sm:mt-20 lg:mt-[164px]">
-            <h6 className='text-3xl xs:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary lg:leading-[80px] font-black'>
+            <h6 data-animate className='text-3xl xs:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary lg:leading-[80px] font-black'>
                 <span className='text-primary ml-3'>Meet</span> the Team
             </h6>
-            <div className="mt-10 sm:mt-[50px] lg:mt-[92px]">
+            <div data-animate className="mt-10 sm:mt-[50px] lg:mt-[92px]">
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
@@ -50,7 +50,7 @@ const Team = () => {
                     {
                         teams.map((team, idx) => (
                             <SwiperSlide key={idx} className='flex justify-center items-center select-none'>
-                                <div className="w-full">
+                                <div data-animate className="w-full">
                                     <div className="relative w-[150px] xl:w-[189px] h-[156px] xl:h-[183px] mx-auto rounded-full">
                                         <Image className='rounded-full overflow-hidden object-contain' fill  src={team.imgUrl} alt='Team' />
                                     </div>

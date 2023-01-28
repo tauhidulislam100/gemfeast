@@ -2,13 +2,13 @@ import React from 'react';
 
 const Roadmap = () => {
     return (
-        <section className="px-[8%] mt-10 sm:mt-20 lg:mt-[134px] ">
-          <h6 className='text-3xl sm:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary leading-[80px] font-black'>
+        <section id='roadmap' className="px-[8%] mt-10 sm:mt-20 lg:mt-[134px] ">
+          <h6 data-animate id='roadmap-title' className='text-3xl sm:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary leading-[80px] font-black'>
             Project 
             <span className='text-primary ml-3'>Roadmap</span>
           </h6>
           <div className="mt-[30px] md:mt-[50px] sm:hidden mb-10">
-            <div className="flex justify-center ml-24">
+            <div className="flex justify-center items-center ml-16 md:ml-24">
               <div className="">
                 <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#BAC82E]'>Q3 2022</h5>
                 <ul className='text-base lg:text-xl font-medium text-secondary mt-4 max-w-[270px]'>
@@ -77,8 +77,8 @@ const Roadmap = () => {
               </div>
           </div>
           <div className="hidden sm:block">
-            <div className="mt-[50px] grid grid-cols-3 gap-8">
-              <div className="flex items-end">
+            <div id='roadmap1' className="mt-[50px] grid grid-cols-3 gap-8">
+              <div data-animate className="flex items-end">
                 <div className="">
                   <ul className='text-base lg:text-xl font-medium text-secondary'>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Idea and Concept layout</li>
@@ -92,7 +92,7 @@ const Roadmap = () => {
                   <h5 className='text-2xl lg:text-4xl font-bold font-lora mt-4 ml-[40px] text-[#BAC82E]'>Q3 2022</h5>
                 </div>
               </div>
-              <div className="flex items-end">
+              <div data-animate className="flex items-end">
                 <div className="">
                   <ul className='text-base lg:text-xl font-medium text-secondary'>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Community contests <br /> for token whitelist sale</li>
@@ -102,7 +102,7 @@ const Roadmap = () => {
                   <h5 className='text-2xl lg:text-4xl font-bold font-lora mt-4 text-[#F4A120]'>Q1 2023</h5>
                 </div>
               </div>
-              <div className="flex items-end">
+              <div data-animate className="flex items-end">
                 <div className="">
                   <ul className='text-base lg:text-xl font-medium text-secondary'>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Advanced analytics</li>
@@ -117,18 +117,18 @@ const Roadmap = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[130px] flex items-center pb-40">
-              <span className="w-1/6 h-6 rounded-l-full bg-[#BAC82E] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:-top-[115px] before:left-1/2"></span>
-              <span className="w-1/6 h-6 rounded-l-full bg-[#0B6C81] -translate-x-[8px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:top-[55px] before:left-1/2"></span>
-              <span className="w-1/6 h-6 rounded-l-full bg-[#F4A120] -translate-x-[18px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:-top-[115px] before:left-1/2"></span>
-              <span className="w-1/6 h-6 rounded-l-full bg-[#C8532E] -translate-x-[28px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:top-[55px] before:left-1/2"></span>
-              <span className="w-1/6 h-6 rounded-l-full bg-[#ABCB9C] -translate-x-[38px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:-top-[115px] before:left-1/2"></span>
-              <span className="w-1/6 h-6 rounded-full bg-[#FF703B] -translate-x-[48px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:top-[55px] before:left-1/2"></span>
+            <div id='roadmap2' className="mt-[130px] flex items-center pb-40">
+              <span data-animate className="w-1/6 h-6 rounded-l-full bg-[#BAC82E] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:-top-[115px] before:left-1/2"></span>
+              <span data-animate className="w-1/6 h-6 rounded-l-full bg-[#0B6C81] -translate-x-[8px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:top-[55px] before:left-1/2"></span>
+              <span data-animate className="w-1/6 h-6 rounded-l-full bg-[#F4A120] -translate-x-[18px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:-top-[115px] before:left-1/2"></span>
+              <span data-animate className="w-1/6 h-6 rounded-l-full bg-[#C8532E] -translate-x-[28px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:top-[55px] before:left-1/2"></span>
+              <span data-animate className="w-1/6 h-6 rounded-l-full bg-[#ABCB9C] -translate-x-[38px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:-top-[115px] before:left-1/2"></span>
+              <span data-animate className="w-1/6 h-6 rounded-full bg-[#FF703B] -translate-x-[48px] relative before:content-[''] before:block before:w-1 before:h-[86px] before:bg-secondary before:absolute before:top-[55px] before:left-1/2"></span>
             </div>
-            <div className="flex justify-evenly lg:gap-44">
-                <div className="w-1/3 translate-x-2/4 lg:translate-x-3/4">
+            <div id='roadmap3' className="flex justify-evenly lg:gap-44">
+                <div data-animate className="w-1/3 translate-x-[100px] lg:translate-x-3/4">
                   <div className="">
-                    <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#0B6C81]'>Q3 2022</h5>
+                    <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#0B6C81]'>Q4 2022</h5>
                     <ul className='text-base lg:text-xl font-medium text-secondary'>
                       <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Frontend integration</li>
                       <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Wallet integration</li>
@@ -136,15 +136,15 @@ const Roadmap = () => {
                     </ul>
                   </div>
                 </div>
-                <div className=" w-1/3 translate-x-[78px] lg:translate-x-1/2">
-                  <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#C8532E]'>Q1 2023</h5>
+                <div data-animate className=" w-1/3 translate-x-[50px] lg:translate-x-1/2">
+                  <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#C8532E]'>Q2 2023</h5>
                   <ul className='text-base lg:text-xl font-medium text-secondary items-end'>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Development of <br /> launchpad/Whitelist <br /> feature</li>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Ramped up Marketing <br /> and Partnerships</li>
                   </ul>
                 </div>
-                <div className="w-1/3 translate-x-[60px] lg:translate-x-1/3">
-                  <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#FF703B]'>Q3 2023</h5>
+                <div data-animate className="w-auto lg:w-1/3 translate-x-[25px]  md:translate-x-1/3">
+                  <h5 className='text-2xl lg:text-4xl font-bold font-lora text-[#FF703B]'>Q4 2023</h5>
                   <ul className='text-base lg:text-xl font-medium text-secondary'>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Mobile (iOS and <br /> Android) App <br /> developement</li>
                     <li className="before:content-[''] before:block before:bg-secondary before:rounded-full before:w-1 before:h-1 before:translate-y-[15px] before:-translate-x-3">Gemfeast VR <br /> marketplace</li>

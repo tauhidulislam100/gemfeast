@@ -14,8 +14,9 @@ const nftImages = [
 const HeroBanner = () => {
 
     return (
-      <div className="mx-[4%] md:mx-[6%] lg:mx-[8%] mt-10 2xl:mt-24">
+      <div className="mx-[4%] md:mx-[6%] lg:mx-[8%] mt-10 2xl:mt-24 transition-all duration-300 ease-in-out">
         <Swiper
+            id='slider'
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -38,6 +39,7 @@ const HeroBanner = () => {
                 nftImages.map((slide, index) => (
                 <SwiperSlide key={`hero_${index}`}>
                   {({isActive, isPrev}) => <Image
+                        data-animate
                         fill 
                         src={slide.imgUrl} 
                         className={`
@@ -50,16 +52,16 @@ const HeroBanner = () => {
                 ))
               }
         </Swiper>
-        <div className='mt-4 sm:mt-8 lg:mt-12'>
+        <div id='marketplace' className='mt-4 sm:mt-8 lg:mt-12'>
           <div className='flex-1'>
-            <h1 className='text-3xl xs:text-4xl lg:text-[54px] text-secondary lg:leading-[80px] font-bold text-center'>
+            <h1 data-animate className='text-3xl xs:text-4xl lg:text-[54px] text-secondary lg:leading-[80px] font-bold text-center'>
               <span className='text-primary'>NFT</span> marketplace for  
               <span className='text-primary'> SUI</span> fans
             </h1>
-            <p className='text-lg lg:text-2xl lg:leading-9 text-[#6D6F6E] font-medium mt-7'>
+            <p data-animate className='text-base sm:text-lg lg:text-2xl lg:leading-9 text-[#6D6F6E] font-medium mt-7'>
               Create, Collect and Invest in premium NFT assets on the SUI network. Our community driven approach makes NFT trading fun and lets you earn while doing it. And if you are in it for the art, you are welcome to feast with us. 
             </p>
-            <div className='mt-6 lg:mt-10 flex items-center gap-3'>
+            <div data-animate className='mt-6 lg:mt-10 flex items-center gap-3'>
               <button className='px-7 lg:px-12 py-2 lg:py-3.5 transition-all duration-300 ease-in-out text-base lg:text-xl font-medium md:font-semibold text-white bg-custom-gradient rounded-full'>Explore</button>
               <Link href={'/'}>
                 <button className='px-6 flex items-center gap-3 lg:text-xl text-primary font-semibold whitespace-nowrap hover:text-secondary'>Join our community <HiOutlineArrowRight /></button>
