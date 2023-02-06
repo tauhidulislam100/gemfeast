@@ -109,7 +109,7 @@ export default function Home() {
     },[isTablet, isMounted]);
 
   return (
-    <div ref={homeRef} id="body" className='md:bg-[url("/img/gem_feast_bg.png")] bg-no-repeat bg-fixed bg-cover'>
+    <div ref={homeRef} id="body" className='md:bg-[url("/img/gem_feast_bg.png")] bg-no-repeat bg-cover'>
       {
         isMounted ? 
         <>
