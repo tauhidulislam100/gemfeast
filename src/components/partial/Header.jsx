@@ -39,7 +39,7 @@ const Header = () => {
     },[isTablet]);
     
     return (
-        <header ref={headerRef} id='header' className={`z-[9999]  px-[4%] lg:px-[8%] py-4 transition-all duration-500 ease-in-out ${headerFixed ? 'w-full fixed top-0 md:py-5 bg-white/90 shadow-lg' : 'md:relative md:shadow-none md:pt-8 lg:pt-14 md:bg-transparent'}`}>
+        <header ref={headerRef} id='header' className={`z-[9999]  px-[4%] lg:px-[8%] 4xl:mx-auto 4xl:max-w-[1920px] py-4 transition-all duration-500 ease-in-out ${headerFixed ? 'w-full fixed top-0 md:py-5 bg-white/90 shadow-lg' : 'md:relative md:shadow-none md:pt-8 lg:pt-14 md:bg-transparent'}`}>
           <div className='flex justify-between items-center md:ml-[30px] gap-10'>
             <Link href={'/'} className='relative min-w-[71px]'>
               <div className='w-8 h-8 sm:hidden'>

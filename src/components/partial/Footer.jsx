@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer id='footer' className="text-[#213D39] mx-[8%] ">
+        <footer id='footer' className="text-[#213D39] mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px]">
           <div className="border-y border-gray-300 pt-14 pb-[62px] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
               <Link href={"/"} className="relative" data-animate>

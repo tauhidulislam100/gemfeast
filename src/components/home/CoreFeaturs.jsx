@@ -3,7 +3,7 @@ import React from 'react';
 
 const CoreFeature = () => {
     return (
-        <section id="corefeatures" className='mx-[6%] lg:mx-[8%] text-center mt-20 md:mt-[134px]'>
+        <section id="corefeatures" className='mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] text-center mt-20 md:mt-[134px]'>
           <h3 data-animate className='text-3xl sm:text-[40px] md:text-[40px] lg:text-5xl text-secondary lg:leading-[80px] font-black '>
             <span className='text-primary '>GEMFEAST</span> Core Features
           </h3>

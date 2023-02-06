@@ -2,7 +2,7 @@ import React from 'react';
 
 const Roadmap = () => {
     return (
-        <section id='roadmap' className="px-[8%] mt-10 sm:mt-20 lg:mt-[134px] ">
+        <section id='roadmap' className="px-[8%] 4xl:mx-auto 4xl:max-w-[1920px] mt-10 sm:mt-20 lg:mt-[134px] ">
           <h6 data-animate id='roadmap-title' className='text-3xl sm:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary leading-[80px] font-black'>
             Project 
             <span className='text-primary ml-3'>Roadmap</span>

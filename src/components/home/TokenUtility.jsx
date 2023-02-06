@@ -3,7 +3,7 @@ import React from 'react';
 const TokenUtility = () => {
 
     return (
-        <section id='token-utility' className="mx-[2%] lg:mx-[8%] mt-10 sm:mt-20 lg:mt-[180px] text-center md:pb-52">
+        <section id='token-utility' className="mx-[2%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] mt-10 sm:mt-20 lg:mt-[180px] text-center md:pb-52">
           <h6 id='utility-title' className='text-3xl xs:text-4xl sm:text-[40px] lg:text-5xl text-secondary font-black'>
             <span className='text-primary ml-3'>Feast</span> Token Utility
           </h6>

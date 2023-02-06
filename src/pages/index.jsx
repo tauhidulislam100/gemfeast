@@ -90,7 +90,7 @@ export default function Home() {
         animateTitle("#airdrop-title");
         animateTitle("#utility-title");
         animateTitle("#roadmap-title");
-        animateScreen("#marketplace");
+        // animateScreen("#marketplace");
         // animateTitle("#slider");
         animateScreen("#whysui");
         animateScreen("#corefeatures");

@@ -4,7 +4,7 @@ import React from 'react';
 const Tokenomics = () => {
     
     return (
-        <section id='tokenomics' className="mx-[6%] lg:mx-[8%] mt-10 sm:mt-16 lg:mt-[146px] text-center">
+        <section id='tokenomics' className="mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] mt-10 sm:mt-16 lg:mt-[146px] text-center">
           <h5 data-animate id='tokenomics-title' className='text-3xl xs:text-4xl sm:text-[40px] lg:text-5xl text-secondary font-black'>
             <span className='text-primary ml-3'>Token</span>omics
           </h5>

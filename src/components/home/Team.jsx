@@ -32,7 +32,7 @@ const Team = () => {
     ];
 
     return (
-        <section id='team' className="mx-[6%] lg:mx-[8%] mt-14 sm:mt-20 lg:mt-[164px]">
+        <section id='team' className="mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] mt-14 sm:mt-20 lg:mt-[164px]">
             <h6 data-animate className='text-3xl xs:text-4xl md:text-[40px] lg:text-5xl text-center text-secondary lg:leading-[80px] font-black'>
                 <span className='text-primary ml-3'>Meet</span> the Team
             </h6>
