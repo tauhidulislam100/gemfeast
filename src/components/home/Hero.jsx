@@ -57,7 +57,7 @@ const HeroBanner = () => {
                         src={slide.imgUrl} 
                         className={`
                           relative -z-10 transition-all duration-300 ease-in-out rounded-lg 
-                          ${!isActive ? 'opacity-80': ''} 
+                          ${!isActive ? 'contrast-[.60]': ''} 
                           ${{/* isPrev && index === 0 ? 'scale-[0.72]' : '' */ }}
                           `}  
                           alt='Chinese panda' />}
