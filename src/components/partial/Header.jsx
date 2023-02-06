@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import { useMediaQuery } from 'react-responsive';
 const Drawer = dynamic(() => import('react-modern-drawer'), { ssr: false });
 
-const Header = () => {
+const Header = ({ homeRef }) => {
 
     
     const [headerFixed, setHeader] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
     useEffect(()=> {
 
       if(headerRef.current){
-        const headerPos = headerRef.current?.getBoundingClientRect().top;
+        const headerPos = document.getElementById("body").getBoundingClientRect().top;
         window.addEventListener('scroll', () => {
           var currentPos = window.pageYOffset;
           if(currentPos > headerPos){
@@ -39,8 +39,8 @@ const Header = () => {
     },[isTablet]);
     
     return (
-        <header ref={headerRef} id='header' className={`z-[9999]  px-[4%] lg:px-[8%] 4xl:mx-auto 4xl:max-w-[1920px] py-4 transition-all duration-500 ease-in-out ${headerFixed ? 'w-full fixed top-0 md:py-5 bg-white/90 shadow-lg' : 'md:relative md:shadow-none md:pt-8 lg:pt-14 md:bg-transparent'}`}>
-          <div className='flex justify-between items-center md:ml-[30px] gap-10'>
+        <header ref={headerRef} id='header' className={`z-[9999]  px-[4%] lg:px-[8%] py-4 transition-[padding] duration-500 ease-in-out fixed w-full ${headerFixed ? 'top-0 md:py-5 backdrop-blur-xl shadow-lg' : 'md:shadow-none md:pt-8 lg:pt-14 md:bg-transparent'}`}>
+          <div className='flex justify-between items-center md:ml-[30px] gap-10 4xl:mx-auto 4xl:max-w-[1920px]'>
             <Link href={'/'} className='relative min-w-[71px]'>
               <div className='w-8 h-8 sm:hidden'>
                 <Image fill src="/logo.svg" alt='Logo' />
