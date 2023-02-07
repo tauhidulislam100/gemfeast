@@ -20,19 +20,20 @@ const nftImages = [
 
 const HeroBanner = () => {
 
+    const isMobile = useMediaQuery({ minWidth: '320px', maxWidth: '769px' })
     const isXl = useMediaQuery({ minWidth: '1280px', maxWidth: '1535px' })
     const is2xl = useMediaQuery({ minWidth: '1536px', maxWidth: '1919px' })
     const is3xl = useMediaQuery({ minWidth: '1920px', maxWidth: '2559px' })
     const is4xl = useMediaQuery({ minWidth: '2560px' })
 
     return (
-      <div className="pt-32 mx-[4%] md:mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] transition-all duration-500 ease-in-out">
+      <div className="pt-24 md:pt-32 mx-[4%] md:mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] transition-all duration-500 ease-in-out">
         <Swiper
             id='slider'
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={ isXl ? 4.2 : is2xl ? 3.5 : is3xl ? 4.4 : is4xl ? 2.8 : 3}
+            slidesPerView={ isMobile ? 2.1 : isXl ? 4.2 : is2xl ? 3.5 : is3xl ? 3.3 : is4xl ? 2.8 : 3}
             initialSlide={1}
             loop
             coverflowEffect={{
@@ -45,7 +46,7 @@ const HeroBanner = () => {
               clickable: true,
               type: 'bullets', }}
             modules={[Pagination, EffectCoverflow]}
-            className="mySwiper h-[220px] md:h-[300px] lg:h-[350px] xl:h-[300px] 2xl:h-[400px] 3xl:h-[420px] 4xl:h-[800px] w-full pb-2 2xl:pb-5"
+            className="mySwiper h-[245px] md:h-[300px] lg:h-[350px] xl:h-[300px] 2xl:h-[400px] 3xl:h-[550px] 4xl:h-[800px] w-full md:pb-2 2xl:pb-5"
             >
               {
                 nftImages.map((slide, index) => (
