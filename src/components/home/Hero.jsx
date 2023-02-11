@@ -26,7 +26,7 @@ const HeroBanner = () => {
   const is4xl = useMediaQuery({ minWidth: '2560px' });
 
   return (
-    <div className="pt-24 md:pt-32 mx-[4%] md:mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] transition-all duration-500 ease-in-out">
+    <div className="pt-28 md:pt-44 mx-[4%] md:mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] transition-all duration-500 ease-in-out">
       <Swiper
         id="slider"
         effect={'coverflow'}
