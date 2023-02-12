@@ -19,22 +19,28 @@ const nftImages = [
 ];
 
 const HeroBanner = () => {
-  const isMobile = useMediaQuery({ minWidth: '320px', maxWidth: '769px' });
+  const isXsMobile = useMediaQuery({ minWidth: '320px', maxWidth: '479px' });
+  const isMdMobile = useMediaQuery({ minWidth: '480px', maxWidth: '639px' });
+  const isMobile = useMediaQuery({ minWidth: '640px', maxWidth: '769px' });
   const isXl = useMediaQuery({ minWidth: '1280px', maxWidth: '1535px' });
   const is2xl = useMediaQuery({ minWidth: '1536px', maxWidth: '1919px' });
   const is3xl = useMediaQuery({ minWidth: '1920px', maxWidth: '2559px' });
   const is4xl = useMediaQuery({ minWidth: '2560px' });
 
   return (
-    <div className="pt-28 md:pt-44 mx-[4%] md:mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] transition-all duration-500 ease-in-out">
+    <div className="pt-24 md:pt-32 lg:pt-[166px] 3xl:pt-[188px] mx-[4%] md:mx-[6%] lg:mx-[8%] 4xl:mx-auto 4xl:max-w-[1920px] transition-all duration-500 ease-in-out">
       <Swiper
         id="slider"
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={
-          isMobile
-            ? 2.1
+          isXsMobile
+            ? 2.4
+            : isMdMobile
+            ? 2.3
+            : isMobile
+            ? 2.9
             : isXl
             ? 3.6
             : is2xl
@@ -58,7 +64,7 @@ const HeroBanner = () => {
           type: 'bullets',
         }}
         modules={[Pagination, EffectCoverflow]}
-        className="mySwiper h-[245px] md:h-[300px] lg:h-[350px] xl:h-[375px] 2xl:h-[400px] 3xl:h-[600px] 4xl:h-[800px] w-full md:pb-2 2xl:pb-5"
+        className="mySwiper h-[200px] xs:h-[265px] md:h-[300px] lg:h-[350px] xl:h-[375px] 2xl:h-[400px] 3xl:h-[600px] 4xl:h-[800px] w-full md:pb-2 2xl:pb-5"
       >
         {nftImages.map((slide, index) => (
           <SwiperSlide key={`hero_${index}`}>
